@@ -18,6 +18,10 @@ html {
     --color-4: #0D0D0D;
 }
 
+section[id] {
+    scroll-margin-top: 190px;
+}
+
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
 /*ESTILOS DEL CARRITO*/
