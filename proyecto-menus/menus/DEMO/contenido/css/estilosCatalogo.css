@@ -20,6 +20,68 @@ html {
 
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
+/*ESTILOS DEL CARRITO*/
+.carritos {
+    position: sticky;
+    top: 50px;
+    width: 100%;
+    background-color: var(--color-3);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    border: var(--color-2) 2px dotted;
+}
+
+.platillo-solicitado {
+    border-bottom: 2px solid var(--color-2);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.platillo-solicitado h2 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: var(--color-1);
+    text-align: center;
+    border: solid var(--color-1);
+}
+
+.platillos__lista {
+    list-style: none;
+    padding-left: 20px;
+    max-height: 130px;
+    overflow-y: scroll;
+}
+
+.carrito__costo {
+    display: inline-block;
+    color: var(--color-4);
+    font-weight: 600;
+    margin-top: 20px;
+
+}
+
+.carrito-pedir {
+    position: relative;
+    background-color: var(--color-1);
+    color: var(--color-3);
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.carrito-pedir:hover {
+    background-color: var(--color-2);
+}
+
 /* ESTILOS DEL ENCABEZADO*/
 .encabezado {
     background-color: var(--color-1);
@@ -64,6 +126,12 @@ html {
 
 
 /*ESTILOS DEL MENU*/
+.contenedor__buscador {
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
 .menu__cerrar {
     margin-top: -35px;
     position: block;
@@ -80,6 +148,14 @@ html {
     color: var(--color-2);
 }
 
+.menu__buscador {
+    flex-grow: 1;
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    margin-right: 10px;
+}
 
 .menu {
     position: sticky;
@@ -93,6 +169,8 @@ html {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     overflow-x: scroll;
     z-index: 1000;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-2) var(--color-3);
 }
 
 .menu::-webkit-scrollbar {
@@ -109,13 +187,12 @@ html {
     border-radius: 20px;
 }
 
-/* Estilos para Firefox */
-.menu {
-    scrollbar-width: thin;
-    /* Tamaño del scrollbar */
-    scrollbar-color: var(--color-2) var(--color-3);
-    /* Color del thumb y de la pista */
+.menu__iconos {
+    display: flex;
+    flex-direction: row;
 }
+
+
 
 
 .menu__buscar,
