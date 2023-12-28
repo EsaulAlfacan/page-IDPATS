@@ -50,7 +50,7 @@ html {
 .platillos__lista {
     list-style: none;
     padding-left: 20px;
-    max-height: 200px;
+    max-height: 230px;
     overflow-y: scroll;
 }
 
