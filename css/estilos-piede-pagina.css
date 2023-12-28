@@ -1,0 +1,226 @@
+/*ESTILOS GENERALES PARA TODOS LOS DOCUMENTOS HTML*/
+
+/*ESTILOS AL SELECTOR UNIVERSAL/////////////////////////////////////////////////////////*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*SECCCIONES DEL HTML///////////////////////////////////////////////////////////////////*/
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Octo-a';
+}
+
+/*FUENTES///////////////////////////////////////////////////////////////////////////////*/
+@font-face {
+    font-family: 'Neutron';
+    src: url(/assets/fonts/Neutron.ttf);
+}
+
+@font-face {
+    font-family: 'Cubic';
+    src: url(/assets/fonts/cubic.ttf);
+}
+
+@font-face {
+    font-family: 'Octo-a';
+    src: url(/assets/fonts/Octosquares.ttf);
+}
+
+@font-face {
+    font-family: 'Octo-b';
+    src: url(/assets/fonts/Octosquares-Bold.ttf);
+}
+
+/*SELECTORES RAIZ////////////////////////////////////////////////////////////////////////*/
+:root {
+    --color-morado: #852362;
+    --color-gris: #4d3f3f;
+    --color-azul: #005089;
+    --color-verde: #708c32;
+    --color-amarillo: #f2cb05;
+    --color-negro: #000000;
+    --color-blanco: #fff;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////*/
+/*PIE DE PAGINA/////////////////////////////////////////////////////////////////////*/
+.contenedor-piedepagina {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 30px;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    padding: 15px 0px;
+    height: auto;
+    margin-top: 0px;
+}
+
+.final {
+    margin-top: -95px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.final .iconos-sociales,
+.final .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+    flex-wrap: wrap;
+}
+
+.final .iconos-sociales li,
+.final .menu li {
+    list-style: none;
+}
+
+.final .iconos-sociales li a {
+    font-size: 2em;
+    color: var(--color-blanco);
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s ease;
+}
+
+.final .iconos-sociales li a:hover {
+    transform: translateY(-10px);
+}
+
+.final .menu li a {
+    font-size: 1.2em;
+    color: var(--color-blanco);
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+.final .menu li a:hover {
+    opacity: 1;
+}
+
+.final a {
+    text-decoration: none;
+    color: var(--color-blanco);
+    margin: 10px;
+}
+
+.final a:hover {
+    color: var(--color-azul);
+}
+
+.final p {
+    text-decoration: none;
+    color: var(--color-blanco);
+    margin: 10px;
+    font-size: 1.1em;
+}
+
+.final-borde {
+    margin-top: 50px;
+    padding: 0;
+}
+
+.final .iconos-sociales li a:hover #ic1:hover {
+    color: #000000;
+}
+
+.final .iconos-sociales li a:hover #ic2:hover {
+    color: var(--color-amarillo);
+}
+
+.final .iconos-sociales li a:hover #ic3:hover {
+    color: var(--color-azul);
+}
+
+.final .iconos-sociales li a:hover #ic4:hover {
+    color: green;
+}
+
+.final .iconos-sociales li a:hover #ic5:hover {
+    color: red;
+}
+
+.link-ga {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #37a652;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.link-ga a img {
+    height: 60px;
+    padding: 10px;
+    background-color: var(--color-blanco);
+    border-radius: 5px;
+}
+
+
+@media (max-width:750px) {
+    .final .menu li a {
+        font-size: .9em;
+        margin-left: 2px;
+    }
+}
+
+@media (max-width:550px) {
+    .final .menu li a {
+        font-size: .7em;
+        margin-left: 2px;
+    }
+
+    .final a {
+        font-size: .9em;
+    }
+
+    .final p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width:550px) {
+
+    .final {
+        text-align: center;
+    }
+
+    .final .menu {
+        margin-left: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .final .menu li a {
+        font-size: .6em;
+        margin-left: 1px;
+    }
+
+    .final a {
+        font-size: .8em;
+    }
+
+    .final p {
+        font-size: .9em;
+    }
+}

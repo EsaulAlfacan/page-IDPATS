@@ -1,0 +1,347 @@
+@font-face {
+    font-family: 'Neutron';
+    src: url(/ASSETS/fonts/Neutron.ttf);
+}
+
+@font-face {
+    font-family: 'Cubic';
+    src: url(/ASSETS/fonts/cubic.ttf);
+}
+
+@font-face {
+    font-family: 'Octo-a';
+    src: url(/ASSETS/fonts/Octosquares.ttf);
+}
+
+@font-face {
+    font-family: 'Octo-b';
+    src: url(/ASSETS/fonts/Octosquares-Bold.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Octo-a';
+    background-color: var(--color-negro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+:root {
+    --color-morado: #852362;
+    --color-gris: #4d3f3f;
+    --color-azul: #005089;
+    --color-verde: #708c32;
+    --color-amarillo: #f2cb05;
+    --color-negro: #000000;
+    --color-blanco: #fff;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////*/
+
+/* Estilos para los divisores de seccion*/
+.custom-shape-divider-top-1703545869 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1703545869 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1703545869 .shape-fill {
+    fill: #708C32;
+}
+
+.custom-shape-divider-top-1703545975 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1703545975 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 104px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1703545975 .shape-fill {
+    fill: var(--color-amarillo);
+}
+
+/* Estilos para el encabezado */
+
+.encabezadoIndex {
+    width: 90%;
+    height: auto;
+    padding: 30px;
+    border: 3px solid var(--color-verde);
+    border-radius: 50px;
+    margin-top: 200px;
+    position: relative;
+    background: var(--color-negro);
+    color: var(--color-blanco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    box-shadow:
+        0 0 5px var(--color-verde),
+        0 0 10px var(--color-verde),
+        0 0 15px var(--color-verde),
+        0 0 20px var(--color-verde),
+        0 0 40px var(--color-verde);
+
+}
+
+.encabezadoIndex__img {
+    width: 250px;
+    border-radius: 50px;
+}
+
+.encabezadoIndex__textos {
+    padding: 30px;
+}
+
+.encabezadoIndex h1 a,
+.encabezadoIndex h2 a {
+    display: inline-block;
+    color: var(--color-azul);
+    text-decoration: none;
+    letter-spacing: 3px;
+    animation: heartbeat 1.5s ease-in-out infinite both;
+    padding: 2px;
+    background-color: var(--color-blanco);
+    border-radius: 10px;
+}
+
+
+@keyframes heartbeat {
+    from {
+        transform: scale(1);
+        transform-origin: center center;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        transform: scale(0.91);
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        transform: scale(0.98);
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        transform: scale(0.87);
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+}
+
+
+
+/* Estilos  para la sección principal*/
+.principalIndex {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    color: var(--color-blanco);
+    background-color: var(--color-negro);
+    padding: 40px;
+    margin-top: 80px;
+    text-align: center;
+    text-align: center;
+}
+
+.principalIndex__titulo,
+.principalIndex__subtitulo,
+.barraLateralInformativa__titulo {
+    text-shadow: 0 0 5px var(--color-amarillo), 0 0 10px var(--color-amarillo), 0 0 20px var(--color-amarillo), 0 0 40px var(--color-amarillo), 0 0 80px var(--color-amarillo), 0 0 90px var(--color-amarillo);
+}
+
+.principalIndex__titulo {
+    font-size: 2.3em;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.principalIndex__subtitulo {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.beneficios-menu-digital {
+    list-style-type: none;
+    padding: 70px;
+}
+
+.beneficios-menu-digital li {
+    border-left: 3px solid var(--color-amarillo);
+    margin-bottom: 10px;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.beneficios-menu-digital span {
+    color: var(--color-amarillo);
+    font-weight: bold;
+}
+
+.barraLateralInformativa {
+    background: rgba(255, 255, 0, 0.2);
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.barraLateralInformativa__enlace {
+    color: var(--color-verde);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.barraLateralInformativa__enlace:hover {
+    text-shadow: 0 0 5px var(--color-verde), 0 0 15px var(--color-verde);
+}
+
+/* Estilos de categorias */
+.categorias {
+    padding: 20px;
+    background-color: var(--color-verde);
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.titulos-seccion {
+    color: var(--color-blanco);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.seccion-productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.categorias__img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.tipo-cliente {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.tipo-cliente h6 {
+    font-size: 18px;
+    color: var(--color-amarillo);
+    margin-top: 10px;
+}
+
+.tipo-cliente p {
+    font-family: 'Octo-b';
+    color: var(--color-blanco);
+}
+
+.boton button {
+    padding: 10px 20px;
+    background-color: var(--color-amarillo);
+    color: var(--color-negro);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Octo-a';
+}
+
+.boton button:hover {
+    background-color: var(--color-blanco);
+}
+
+@media (max-width:800px) {
+    .encabezadoIndex {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .seccion-productos {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:500px) {
+    .principalIndex__titulo {
+        font-size: 1.8em;
+        margin-top: -60px;
+    }
+
+    .beneficios-menu-digital {
+        padding: 15px;
+    }
+}
+
+@media (max-width:400px) {
+    .encabezadoIndex__img {
+        width: 200px;
+    }
+
+    .principalIndex__titulo {
+        font-size: 1.3em;
+        margin-top: -80px;
+    }
+
+    .beneficios-menu-digital {
+        padding: 15px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width:300px) {
+    .encabezadoIndex__textos {
+        font-size: .7em;
+    }
+
+    .principalIndex__titulo {
+        padding: 10px;
+    }
+}

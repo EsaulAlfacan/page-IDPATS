@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Neutron';
+    src: url(/ASSETS/fonts/Neutron.ttf);
+}
+
+@font-face {
+    font-family: 'Cubic';
+    src: url(/ASSETS/fonts/cubic.ttf);
+}
+
+@font-face {
+    font-family: 'Octo-a';
+    src: url(/ASSETS/fonts/Octosquares.ttf);
+}
+
+@font-face {
+    font-family: 'Octo-b';
+    src: url(/ASSETS/fonts/Octosquares-Bold.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Octo-a';
+}
+
+:root {
+    --color-morado: #852362;
+    --color-gris: #4d3f3f;
+    --color-azul: #005089;
+    --color-verde: #708c32;
+    --color-amarillo: #f2cb05;
+    --color-negro: #000000;
+    --color-blanco: #fff;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////*/

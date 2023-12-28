@@ -1,0 +1,41 @@
+/*ENCABEZADO DE IDPATS///////////////////////////////////////////////////////////////////*/
+.encabezado-idpats{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-negro);
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 1000;
+}
+
+
+
+.letras .letras-individual{
+    margin-top: 20px;
+    z-index: 1000;
+}
+
+.letras .letras-individual span{
+    font-family: 'Neutron';
+    color: var(--color-blanco);
+    font-size: 45px;
+    z-index: 1000;
+}
+
+/*PIE DE PAGINA ///////////////////////////////////////////////////////////////////////////*/
+.link-ga{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #37a652;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}

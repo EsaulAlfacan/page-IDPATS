@@ -1,0 +1,744 @@
+/*ESTILOS GENERALES PARA TODOS LOS DOCUMENTOS HTML*/
+
+/*ESTILOS AL SELECTOR UNIVERSAL/////////////////////////////////////////////////////////*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*SECCCIONES DEL HTML///////////////////////////////////////////////////////////////////*/
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Octo-a';
+}
+
+/*FUENTES///////////////////////////////////////////////////////////////////////////////*/
+@font-face {
+  font-family: 'Neutron';
+  src: url(/assets/fonts/Neutron.ttf);
+}
+
+@font-face {
+  font-family: 'Cubic';
+  src: url(/assets/fonts/cubic.ttf);
+}
+
+@font-face {
+  font-family: 'Octo-a';
+  src: url(/assets/fonts/Octosquares.ttf);
+}
+
+@font-face {
+  font-family: 'Octo-b';
+  src: url(/assets/fonts/Octosquares-Bold.ttf);
+}
+
+/*SELECTORES RAIZ////////////////////////////////////////////////////////////////////////*/
+:root {
+  --color-morado: #852362;
+  --color-gris: #4d3f3f;
+  --color-azul: #005089;
+  --color-verde: #708c32;
+  --color-amarillo: #f2cb05;
+  --color-negro: #000000;
+  --color-blanco: #fff;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////*/
+
+/*ESTILO DE FIGURAS///////////////////////////////////////////////////////////////////////////*/
+@media screen and (max-width:1200px) {
+  .contenedor-cartas {
+    position: relative;
+    transform: none;
+    margin-top: 100px;
+    padding-bottom: 50px;
+    z-index: -100;
+  }
+}
+
+.container__background-triangle {
+  max-width: 1200px;
+  height: 600px;
+  margin: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.triangle {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  border-radius: 5%;
+}
+
+.triangle1 {
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(to left, var(--color-azul), var(--color-morado));
+  right: 100px;
+  top: 100px;
+  animation: t1 8s ease infinite;
+}
+
+.triangle2 {
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(to left, var(--color-amarillo), var(--color-verde));
+  top: 350px;
+  animation: t2 9s ease infinite;
+}
+
+.triangle3 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to left, var(--color-negro), var(--color-morado));
+  left: 200px;
+  animation: t3 7s ease infinite;
+}
+
+@keyframes t1 {
+  0% {
+    transform: rotate(45deg) translateY(0px);
+  }
+
+  50% {
+    transform: rotate(45deg) translateY(20px);
+  }
+
+  100% {
+    transform: rotate(45deg) translateY(0px);
+  }
+}
+
+@keyframes t2 {
+  0% {
+    transform: rotate(65deg) translateY(0px);
+  }
+
+  50% {
+    transform: rotate(65deg) translateY(20px);
+  }
+
+  100% {
+    transform: rotate(65deg) translateY(0px);
+  }
+}
+
+@keyframes t3 {
+  0% {
+    transform: rotate(45deg) translateY(0px);
+  }
+
+  50% {
+    transform: rotate(45deg) translateY(20px);
+  }
+
+  100% {
+    transform: rotate(45deg) translateY(0px);
+  }
+}
+
+/* Estilo para el fondo de partículas ///////////////////////////////////////////////////*/
+#particles-js {
+  width: 100%;
+  height: 100%;
+  z-index: -110;
+  position: fixed;
+  margin-top: 0px;
+}
+
+/*ESTILO SUPERIOR DEL NAV*/
+
+.contenedor-logo a img,
+.contenedor-logo a h1 {
+  transform: translateY(1%);
+
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+
+.contenedor-nosotros {
+  width: 100%;
+  height: auto;
+}
+
+.contenedor-a {
+  margin-left: 10%;
+  width: 80%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 1.5rem 80px;
+  border-radius: 20px;
+}
+
+h2 {
+  font-size: 36px;
+  color: var(--color-blanco);
+  font-weight: 800;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  animation: fadeInUp 1s ease;
+}
+
+.txta {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: rgba(112, 140, 50, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+  animation: fadeInUp 1s ease;
+}
+
+.contenedor-a .parrafo-a {
+  color: var(--color-blanco);
+}
+
+.contenedor-a .txta p {
+  color: var(--color-blanco);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -6px;
+  font-size: 25px;
+}
+
+.txta:hover {
+  transform: scale(1.05);
+  animation: bounce 0.5s ease;
+}
+
+.txta i.fa-check {
+  color: var(--color-blanco);
+  font-size: 24px;
+  margin-right: 20px;
+  animation: fadeInLeft 1s ease;
+}
+
+.contenedor-a p {
+  font-size: 18px;
+  color: var(--color-negro);
+  flex-grow: 1;
+  animation: fadeInRight 1s ease;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 1.5;
+  animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-10px);
+  }
+
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Estilos para el contenedor */
+.contenedor-b {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 2);
+  text-align: center;
+}
+
+/* Estilos para el párrafo dentro del contenedor */
+.contenedor-b p {
+  font-size: 23px;
+  color: var(--color-negro);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.contenedor-c {
+  margin-top: 30px;
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Color de fondo */
+  padding: 100px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  /* Sombra suave */
+  margin-bottom: 20px;
+  /* Espacio entre contenedores */
+}
+
+.contenedor-c h3 {
+  font-size: 35px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: var(--color-azul);
+  /* Color de acento verde */
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.contenedor-c p {
+  font-size: 18px;
+  color: var(--color-blanco);
+  /* Texto oscuro */
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Estilos para el contenedor */
+.contenedor-d {
+  margin-top: 30px;
+  margin-left: 15%;
+  width: 70%;
+  background-color: rgba(133, 35, 98, .97);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.contenedor-d:hover {
+  transform: scale(1.05);
+  /* Efecto de escala al pasar el mouse */
+}
+
+.contenedor-d h3 {
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.contenedor-d p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+  transition: color 0.3s ease;
+  /* Cambio de color al pasar el mouse */
+}
+
+/* Estilo para el enlace */
+.contenedor-d a {
+  color: #ff9b3e;
+  /* Color de enlace anaranjado */
+  text-decoration: none;
+  border-bottom: 1px dotted #ff9b3e;
+  /* Efecto de línea punteada en el enlace */
+  transition: border-color 0.3s ease;
+}
+
+.contenedor-d a:hover {
+  border-color: #fff;
+  /* Cambio de color al pasar el mouse */
+}
+
+/*MEDIA QUERYS*/
+@media (max-width:600px) {
+  .contenedor-a {
+    margin-left: 10%;
+    width: 80%;
+    height: auto;
+    padding: 1.5rem 80px;
+    border-radius: 20px;
+  }
+
+  h2 {
+    font-size: 28px;
+    font-weight: 800;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    animation: fadeInUp 1s ease;
+  }
+
+  /* Estilos para las características y su ícono */
+  .txta {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+    animation: fadeInUp 1s ease;
+  }
+
+  .contenedor-a .txta p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -6px;
+    font-size: 17px;
+  }
+
+  .contenedor-a p {
+    font-size: 15px;
+  }
+
+  .txta:hover {
+    transform: scale(1.05);
+    animation: bounce 0.5s ease;
+  }
+
+  .txta i.fa-check {
+    font-size: 24px;
+    margin-right: 20px;
+    animation: fadeInLeft 1s ease;
+  }
+
+
+
+  /* Estilos para el contenedor */
+  .contenedor-b {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+
+  /* Estilos para el párrafo dentro del contenedor */
+  .contenedor-b p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .contenedor-c {
+    margin-top: 30px;
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
+
+  .contenedor-c h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  .contenedor-c p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  /* Estilos para el contenedor */
+  .contenedor-d {
+    margin-top: 30px;
+    margin-left: 15%;
+    width: 70%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+  }
+
+  .contenedor-d:hover {
+    transform: scale(1.05);
+  }
+
+  .contenedor-d h3 {
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .contenedor-d p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+    transition: color 0.3s ease;
+  }
+}
+
+@media (max-width:500px) {
+  .contenedor-a {
+    margin-left: 10%;
+    width: 80%;
+    height: auto;
+    padding: 1.5rem 30px;
+    border-radius: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    animation: fadeInUp 1s ease;
+  }
+
+  /* Estilos para las características y su ícono */
+  .txta {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+    animation: fadeInUp 1s ease;
+  }
+
+  .contenedor-a .txta p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -6px;
+    font-size: 13px;
+  }
+
+  .contenedor-a p {
+    font-size: 12px;
+  }
+
+  .txta:hover {
+    transform: scale(1.05);
+    animation: bounce 0.5s ease;
+  }
+
+  .txta i.fa-check {
+    font-size: 24px;
+    margin-right: 20px;
+    animation: fadeInLeft 1s ease;
+  }
+
+  .contenedor-b {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+
+  .contenedor-b p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .contenedor-c {
+    margin-top: 30px;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
+
+  .contenedor-c h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  .contenedor-c p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .contenedor-d {
+    margin-top: 30px;
+    margin-left: 15%;
+    width: 70%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+  }
+
+  .contenedor-d:hover {
+    transform: scale(1.05);
+  }
+
+  .contenedor-d h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .contenedor-d p {
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 0;
+    transition: color 0.3s ease;
+  }
+}
+
+@media (max-width:260px) {
+  .contenedor-a {
+    margin-top: -35px;
+    margin-left: 10%;
+    width: 80%;
+    height: auto;
+    padding: 1.5rem 30px;
+    border-radius: 20px;
+  }
+
+  h2 {
+    font-size: 17px;
+    font-weight: 800;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    animation: fadeInUp 1s ease;
+  }
+
+  .txta {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+    animation: fadeInUp 1s ease;
+  }
+
+  .contenedor-a .txta p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -6px;
+    font-size: 10px;
+  }
+
+  .contenedor-a p {
+    font-size: 10px;
+  }
+
+  .txta:hover {
+    transform: scale(1.05);
+    animation: bounce 0.5s ease;
+  }
+
+  .txta i.fa-check {
+    font-size: 15px;
+    margin-right: 20px;
+    animation: fadeInLeft 1s ease;
+  }
+
+
+  .contenedor-b {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+
+  .contenedor-b p {
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .contenedor-c {
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
+
+  .contenedor-c h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  .contenedor-c p {
+    font-size: 11px;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .contenedor-d {
+    margin-top: 30px;
+    margin-left: 15%;
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+  }
+
+  .contenedor-d:hover {
+    transform: scale(1.05);
+  }
+
+  .contenedor-d h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .contenedor-d p {
+    font-size: 11px;
+    line-height: 1.5;
+    margin: 0;
+    transition: color 0.3s ease;
+  }
+}

@@ -1,0 +1,261 @@
+/*ESTILOS GENERALES PARA TODOS LOS DOCUMENTOS HTML*/
+
+/*ESTILOS AL SELECTOR UNIVERSAL/////////////////////////////////////////////////////////*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*SECCCIONES DEL HTML///////////////////////////////////////////////////////////////////*/
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Octo-a';
+}
+
+/*FUENTES///////////////////////////////////////////////////////////////////////////////*/
+@font-face {
+    font-family: 'Neutron';
+    src: url(/assets/fonts/Neutron.ttf);
+}
+
+@font-face {
+    font-family: 'Cubic';
+    src: url(/assets/fonts/cubic.ttf);
+}
+
+@font-face {
+    font-family: 'Octo-a';
+    src: url(/assets/fonts/Octosquares.ttf);
+}
+
+@font-face {
+    font-family: 'Octo-b';
+    src: url(/assets/fonts/Octosquares-Bold.ttf);
+}
+
+/*SELECTORES RAIZ////////////////////////////////////////////////////////////////////////*/
+:root {
+    --color-morado: #852362;
+    --color-gris: #4d3f3f;
+    --color-azul: #005089;
+    --color-verde: #708c32;
+    --color-amarillo: #f2cb05;
+    --color-negro: #000000;
+    --color-blanco: #fff;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////*/
+
+/*ESTILO DE FIGURAS///////////////////////////////////////////////////////////////////////////*/
+@media screen and (max-width:1200px) {
+    .contenedor-cartas {
+        position: relative;
+        transform: none;
+        margin-top: 100px;
+        padding-bottom: 50px;
+        z-index: -100;
+    }
+}
+
+.container__background-triangle {
+    max-width: 1200px;
+    height: 600px;
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.triangle {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 5%;
+}
+
+.triangle1 {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(to left, var(--color-azul), var(--color-morado));
+    right: 100px;
+    top: 100px;
+    animation: t1 8s ease infinite;
+}
+
+.triangle2 {
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(to left, var(--color-amarillo), var(--color-verde));
+    top: 350px;
+    animation: t2 9s ease infinite;
+}
+
+.triangle3 {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to left, var(--color-negro), var(--color-morado));
+    left: 200px;
+    animation: t3 7s ease infinite;
+}
+
+@keyframes t1 {
+    0% {
+        transform: rotate(45deg) translateY(0px);
+    }
+
+    50% {
+        transform: rotate(45deg) translateY(20px);
+    }
+
+    100% {
+        transform: rotate(45deg) translateY(0px);
+    }
+}
+
+@keyframes t2 {
+    0% {
+        transform: rotate(65deg) translateY(0px);
+    }
+
+    50% {
+        transform: rotate(65deg) translateY(20px);
+    }
+
+    100% {
+        transform: rotate(65deg) translateY(0px);
+    }
+}
+
+@keyframes t3 {
+    0% {
+        transform: rotate(45deg) translateY(0px);
+    }
+
+    50% {
+        transform: rotate(45deg) translateY(20px);
+    }
+
+    100% {
+        transform: rotate(45deg) translateY(0px);
+    }
+}
+
+/* Estilo para el fondo de partículas ///////////////////////////////////////////////////*/
+#particles-js {
+    width: 100%;
+    height: 100%;
+    z-index: -110;
+    position: fixed;
+    margin-top: 0px;
+}
+
+/*ESTILO SUPERIOR DEL NAV*/
+
+.contenedor-logo a img,
+.contenedor-logo a h1 {
+    transform: translateY(1%);
+
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+
+.contact-container {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 8px;
+    padding: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h2 {
+    font-size: 35px;
+    color: var(--color-blanco);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.row-100 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.col {
+    flex: 1;
+    padding: 10px;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+label {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    color: rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+}
+
+input:focus+label,
+textarea:focus+label {
+    top: -23px;
+    left: 10px;
+    font-size: 15px;
+    color: var(--color-blanco);
+    z-index: 30;
+}
+
+.underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition: transform 0.2s;
+}
+
+input:focus~.underline,
+textarea:focus~.underline {
+    transform: scaleX(1);
+}
+
+button[type="submit"] {
+    color: var(--color-negro);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--color-verde);
+}
+
+.boton-enviar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

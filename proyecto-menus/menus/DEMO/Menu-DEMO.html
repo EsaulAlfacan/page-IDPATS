@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <!--ETIQUETAS META-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow, noarchive">
+    <meta name="theme-color" content="#708c32">
+
+    <!--ETIQUETA TITULO-->
+    <title>Menú DEMO</title>
+
+    <!--ETIQUETAS ESTILOS (CSS)-->
+    <link rel="stylesheet" href="/proyecto-menus/menus/DEMO/contenido/css/estilosCatalogo.css">
+
+    <!--ETIQUETAS FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="encabezado">
+        <h1 class="encabezado__titulo">Menú DEMO</h1>
+        <img class="encabezado__img" src="/proyecto-menus/menus/DEMO/contenido/images/demo-logotipo.webp" alt="CAROL">
+        <div class="encabezado__redes">
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i> </a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </header>
+
+    <nav class="menu">
+        <div class="menu__iconos">
+
+            <button class="menu__buscar" aria-label="Buscar en el menú">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button class="menu__icono" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <ul>
+            <button class="menu__cerrar" aria-label="Cerrar menú">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <li><a href="#entradas">Entradas</a></li>
+            <li><a href="#principales">Principales</a></li>
+            <li><a href="#mar">Mar</a></li>
+            <li><a href="#comidarapida">Comida Rápida</a></li>
+            <li><a href="#postres">Postres</a></li>
+            <li><a href="#bebidas">Bebidas</a></li>
+        </ul>
+    </nav>
+
+    <section class="carritos">
+        <article class="platillo-solicitado">
+            <h2>Platillos Solicitados</h2>
+            <div class="platillos__lista"></div>
+        </article>
+
+        <strong class="carrito__costo"></strong>
+        <button class="carrito-pedir" type="button">Pedir Carrito</button>
+    </section>
+
+
+    <main class="platillos">
+        <section class="entradas">
+            <h4 class="platillo__titulo">ENTRADAS</h4>
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/ensalada cesar.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Ensalada César</h5>
+                    <p class="platillo__descripcion">Clásica con lechuga romana, crutones, parmesano y aderezo César.
+                    </p>
+                    <p class="platillo__precio">MXN 80.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/ensalada cesar.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Ensalada César</h5>
+                    <p class="platillo__descripcion">Clásica con lechuga romana, crutones, parmesano y aderezo César.
+                    </p>
+                    <p class="platillo__precio">MXN 80.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/ensalada cesar.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Ensalada César</h5>
+                    <p class="platillo__descripcion">Clásica con lechuga romana, crutones, parmesano y aderezo César.
+                    </p>
+                    <p class="platillo__precio">MXN 80.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/ensalada cesar.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Ensalada César</h5>
+                    <p class="platillo__descripcion">Clásica con lechuga romana, crutones, parmesano y aderezo César.
+                    </p>
+                    <p class="platillo__precio">MXN 80.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+        </section>
+
+        <section class="entradas">
+            <h4 class="platillo__titulo">PLATOS PRINCIPALES</h4>
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/ensalada cesar.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Ensalada César</h5>
+                    <p class="platillo__descripcion">Clásica con lechuga romana, crutones, parmesano y aderezo César.
+                    </p>
+                    <p class="platillo__precio">MXN 80.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/ensalada cesar.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Ensalada César</h5>
+                    <p class="platillo__descripcion">Clásica con lechuga romana, crutones, parmesano y aderezo César.
+                    </p>
+                    <p class="platillo__precio">MXN 80.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/ensalada cesar.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Ensalada César</h5>
+                    <p class="platillo__descripcion">Clásica con lechuga romana, crutones, parmesano y aderezo César.
+                    </p>
+                    <p class="platillo__precio">MXN 80.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/ensalada cesar.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Ensalada César</h5>
+                    <p class="platillo__descripcion">Clásica con lechuga romana, crutones, parmesano y aderezo César.
+                    </p>
+                    <p class="platillo__precio">MXN 80.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+        </section>
+
+        <section class="entradas">
+            <h4 class="platillo__titulo">MAR</h4>
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/ensalada cesar.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Ensalada César</h5>
+                    <p class="platillo__descripcion">Clásica con lechuga romana, crutones, parmesano y aderezo César.
+                    </p>
+                    <p class="platillo__precio">MXN 80.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/ensalada cesar.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Ensalada César</h5>
+                    <p class="platillo__descripcion">Clásica con lechuga romana, crutones, parmesano y aderezo César.
+                    </p>
+                    <p class="platillo__precio">MXN 80.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/ensalada cesar.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Ensalada César</h5>
+                    <p class="platillo__descripcion">Clásica con lechuga romana, crutones, parmesano y aderezo César.
+                    </p>
+                    <p class="platillo__precio">MXN 80.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/ensalada cesar.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Ensalada César</h5>
+                    <p class="platillo__descripcion">Clásica con lechuga romana, crutones, parmesano y aderezo César.
+                    </p>
+                    <p class="platillo__precio">MXN 80.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+        </section>
+
+        <section class="entradas">
+            <h4 class="platillo__titulo">COMIDA RÁPIDA</h4>
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/ensalada cesar.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Ensalada César</h5>
+                    <p class="platillo__descripcion">Clásica con lechuga romana, crutones, parmesano y aderezo César.
+                    </p>
+                    <p class="platillo__precio">MXN 80.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/ensalada cesar.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Ensalada César</h5>
+                    <p class="platillo__descripcion">Clásica con lechuga romana, crutones, parmesano y aderezo César.
+                    </p>
+                    <p class="platillo__precio">MXN 80.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/ensalada cesar.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Ensalada César</h5>
+                    <p class="platillo__descripcion">Clásica con lechuga romana, crutones, parmesano y aderezo César.
+                    </p>
+                    <p class="platillo__precio">MXN 80.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/ensalada cesar.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Ensalada César</h5>
+                    <p class="platillo__descripcion">Clásica con lechuga romana, crutones, parmesano y aderezo César.
+                    </p>
+                    <p class="platillo__precio">MXN 80.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+        </section>
+
+        <section class="entradas">
+            <h4 class="platillo__titulo">POSTRES</h4>
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/ensalada cesar.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Ensalada César</h5>
+                    <p class="platillo__descripcion">Clásica con lechuga romana, crutones, parmesano y aderezo César.
+                    </p>
+                    <p class="platillo__precio">MXN 80.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/ensalada cesar.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Ensalada César</h5>
+                    <p class="platillo__descripcion">Clásica con lechuga romana, crutones, parmesano y aderezo César.
+                    </p>
+                    <p class="platillo__precio">MXN 80.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/ensalada cesar.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Ensalada César</h5>
+                    <p class="platillo__descripcion">Clásica con lechuga romana, crutones, parmesano y aderezo César.
+                    </p>
+                    <p class="platillo__precio">MXN 80.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/ensalada cesar.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Ensalada César</h5>
+                    <p class="platillo__descripcion">Clásica con lechuga romana, crutones, parmesano y aderezo César.
+                    </p>
+                    <p class="platillo__precio">MXN 80.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+        </section>
+
+        <section class="entradas">
+            <h4 class="platillo__titulo">BEBIDAS</h4>
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/ensalada cesar.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Ensalada César</h5>
+                    <p class="platillo__descripcion">Clásica con lechuga romana, crutones, parmesano y aderezo César.
+                    </p>
+                    <p class="platillo__precio">MXN 80.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/ensalada cesar.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Ensalada César</h5>
+                    <p class="platillo__descripcion">Clásica con lechuga romana, crutones, parmesano y aderezo César.
+                    </p>
+                    <p class="platillo__precio">MXN 80.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/ensalada cesar.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Ensalada César</h5>
+                    <p class="platillo__descripcion">Clásica con lechuga romana, crutones, parmesano y aderezo César.
+                    </p>
+                    <p class="platillo__precio">MXN 80.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/ensalada cesar.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Ensalada César</h5>
+                    <p class="platillo__descripcion">Clásica con lechuga romana, crutones, parmesano y aderezo César.
+                    </p>
+                    <p class="platillo__precio">MXN 80.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+        </section>
+    </main>
+
+    <footer class="presentacionFooter">
+        <section class="idpats">
+            <h6>Desarrola tu menú con:</h6>
+            <a rel="noopener" target="_blank" href="https://idpats.com/proyecto-menus/menu.html">IDPATS</a>
+        </section>
+    </footer>
+
+
+    <!--ETIQUETAS SCRIPS-->
+    <script src="https://kit.fontawesome.com/347a447390.js" crossorigin="anonymous"></script>
+    <script src="/proyecto-menus/menus/DEMO/contenido/JS/menu-cerrar.js"></script>
+    <script src="/proyecto-menus/menus/DEMO/contenido/JS/menu-abrir-cerrar.js"></script>
+    <script src="/proyecto-menus/menus/DEMO/contenido/JS/añadir-platillo.js"></script>
+    <script src="/proyecto-menus/menus/DEMO/contenido/JS/precio-carrito.js"></script>
+    <script src="/proyecto-menus/menus/DEMO/contenido/JS/quitar-platillo.js"></script>
+
+</body>
+
+</html>
