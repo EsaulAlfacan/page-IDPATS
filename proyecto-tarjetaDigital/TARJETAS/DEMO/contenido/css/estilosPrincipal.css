@@ -34,14 +34,13 @@ body {
 }
 
 .header__video-contain {
-    width: 240px;
+    width: 100%;
     overflow: hidden;
-    height: 150px;
-    overflow: hidden;
+    height: 200px;
 }
 
 .header__video {
-    width: 230px;
+    width: 100%;
     height: auto;
     z-index: -1;
     top: 0;
@@ -105,7 +104,6 @@ body {
     color: var(--color-2);
     transform: translateY(-10px)
 }
-
 
 .data__miniinfo {
     position: block;
