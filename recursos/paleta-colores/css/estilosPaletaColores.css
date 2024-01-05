@@ -258,3 +258,58 @@ input::placeholder {
 .cssbuttons-io-button:active {
     box-shadow: 0 0.3em 1em -0.5em var(--color-azul);
 }
+
+/*ESTILOS PARA PLANTILLAS*/
+.contenedor-colores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: #f8f8f8;
+}
+
+.plantilla {
+    width: 90%;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.plantilla-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.plantilla-info h4 {
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5em;
+}
+
+.plantilla div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.plantilla-paleta {
+    width: 30%;
+    margin: 10px;
+    border-radius: 13px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .plantilla div {
+        flex-direction: column;
+    }
+
+    .plantilla-paleta {
+        width: 80%;
+        margin: 10px auto;
+    }
+}
