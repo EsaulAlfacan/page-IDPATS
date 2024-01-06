@@ -295,12 +295,23 @@ input::placeholder {
     flex-wrap: wrap;
 }
 
-.plantilla-paleta {
+.contenedor-paletas {
+    max-height: 400px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.descargar-plantilla {
     width: 30%;
     margin: 10px;
-    border-radius: 13px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     height: auto;
+}
+
+.plantilla-paleta {
+    width: 100%;
+    border-radius: 20px;
+
 }
 
 @media (max-width: 768px) {
@@ -308,7 +319,7 @@ input::placeholder {
         flex-direction: column;
     }
 
-    .plantilla-paleta {
+    .descargar-plantilla {
         width: 80%;
         margin: 10px auto;
     }
