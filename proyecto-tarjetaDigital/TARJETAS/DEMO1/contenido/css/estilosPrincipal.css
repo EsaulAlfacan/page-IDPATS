@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-1: #729650;
+    --color-2: #108d10;
+    --color-3: #F2F2F2;
+    --color-4: #0D0D0D;
+    --color-5: #26cc2f;
+}
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-4);
+    background-color: var(--color-3);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+a {
+    color: var(--color-2);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    top: 0;
+    background-color: var(--color-1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+}
+
+header img {
+    object-fit: cover;
+    width: 130%;
+    height: 200%;
+
+}
+
+.menu__redes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    padding: 0 1rem;
+}
+
+main {
+
+    margin: 50px auto;
+    padding: 0 10px;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    width: 90%;
+}
+
+section {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--color-3);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.accordion {
+    display: inline-block;
+    background-color: rgba(16, 141, 16, .6);
+    color: var(--color-3);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
+    transition: ease-out 0.4s;
+}
+
+.panel {
+    width: 100%;
+    padding: 0 50px;
+    background-color: var(--color-3);
+    color: var(--color-4);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+footer {
+    position: fixed;
+    background-color: var(--color-4);
+    color: var(--color-3);
+    text-align: center;
+    padding: 1rem 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 90%;
+    z-index: 10;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        gap: 20px;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul li {
+        padding: 0.5rem 0;
+    }
+}
