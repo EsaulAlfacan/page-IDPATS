@@ -173,11 +173,14 @@
                 style="stroke: none; fill: rgba(0, 0, 0, 0.8);"></path>
         </svg></div>
     <!--/////////////////////////////////////////////////////////////////////////////////////-->
+    <div class="encabezado__indicacion">
+        <p>Explora más a fondo haciendo clic en la opción que más te interese.</p>
+    </div>
 
     <main class="contenedor-secciones-divididas">
 
-        <div class="categorias">
-            <h3 class="titulos-seccion">Producto: Menú digital</h3>
+        <div class="categorias" onclick="toggleContent(this)">
+            <h3 class="titulos-seccion">Menú digital</h3>
             <section class="seccion-productos paquetes-productos">
                 <video class="categorias__img" src="/assets/videos/paquetes/video-menu-demo.mp4" controls
                     preload="metadata" alt="Menú IDPATS" srclang="es" label="Español">
@@ -212,7 +215,7 @@
             </section>
         </div>
 
-        <div class="categorias">
+        <div class="categorias" onclick="toggleContent(this)">
             <h3 class="titulos-seccion">Producto: Tarjeta digital</h3>
             <section class="seccion-productos paquetes-productos">
                 <video class="categorias__img" src="/assets/videos/paquetes/video-tarjeta-demo.mp4" controls
@@ -232,7 +235,7 @@
             </section>
         </div>
 
-        <div class="categorias">
+        <div class="categorias" onclick="toggleContent(this)">
             <h3 class="titulos-seccion">Producto: Landing Page</h3>
             <section class="seccion-productos paquetes-productos">
                 <video class="categorias__img" src="/assets/videos/paquetes/video-tarjeta-demo.mp4" controls
@@ -312,6 +315,7 @@
         <script id="scrip10" src="/js/paquetes/videos.js"></script>
         <script id="scrip11" src="/js/paquetes/mensaje-what.js"></script>
         <script src="/actualizar-web/cache-control.js"></script>
+        <script src="/js/paquetes/desplegar-contenido.js"></script>
         <script src="https://kit.fontawesome.com/347a447390.js" crossorigin="anonymous"></script>
 
 </body>

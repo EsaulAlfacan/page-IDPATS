@@ -223,6 +223,27 @@ main {
     justify-content: center;
 }
 
+.encabezado__indicacion {
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: var(--color-azul);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.9);
+}
+
+.encabezado__indicacion p {
+    font-size: 20px;
+    color: var(--color-blanco);
+    line-height: 1.8;
+    margin: 0;
+}
+
+.categorias {
+    margin: 15px;
+    padding: 10px;
+    border: var(--color-azul) solid 5px;
+}
+
 .seccion-productos .categorias__img {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -347,4 +368,8 @@ main {
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+.paquetes-productos {
+    display: none;
 }
