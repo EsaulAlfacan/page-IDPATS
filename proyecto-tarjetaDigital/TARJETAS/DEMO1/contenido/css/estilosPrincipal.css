@@ -50,8 +50,6 @@ a:hover {
     text-decoration: underline;
 }
 
-
-
 .menu__redes {
     position: absolute;
     width: 100%;
@@ -115,6 +113,11 @@ section {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+}
+
+.item__icon i {
+    margin-top: -20px;
+    font-size: 34px;
 }
 
 .separador {
