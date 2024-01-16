@@ -12,50 +12,41 @@
 
     <!--ETIQUETAS STYLE (CSS)-->
     <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/proyecto-tarjetaDigital/TARJETAS/DEMO/contenido/css/estilosPrincipal.css">
+    <link rel="stylesheet" href="/proyecto-tarjetaDigital/TARJETAS/DEMO2/contenido/css/estilosPrincipal.css">
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__video-contain">
-            <video class="header__video" src="/proyecto-tarjetaDigital/TARJETAS/DEMO/contenido/images/video_portada.mp4"
-                autoplay loop muted></video>
-        </div>
-
-        <h1 class="header__titulo">Ing. Esaul Alfacan</h1>
-
-        <div class="header__profile-contain">
-            <img class="header__profile-image"
-                src="/proyecto-tarjetaDigital/TARJETAS/DEMO/contenido/images/Foto-perfil-elegante.webp"
-                alt="Esaul Alfacan">
-        </div>
-
-
-        <nav class="header__social-media">
-            <ul>
-                <li><a target="_blank" rel="noopener" href="https://api.whatsapp.com/send?phone=7751488345"
-                        aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></li>
-                <li><a target="_blank" rel="noopener" href="https://www.facebook.com/esaul.alfacan"
-                        aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a target="_blank" rel="noopener"
-                        href="https://www.linkedin.com/in/esaul-alejandro-alfaro-canales-3b4835299/"
-                        aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a target="_blank" rel="noopener" href="https://www.instagram.com/esaul.alfacan/"
-                        aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
-            </ul>
-        </nav>
+    <header class="encabezado">
+        <img class="encabezado__img"
+            src="/proyecto-tarjetaDigital/TARJETAS/DEMO2/contenido/images/Foto-perfil-elegante.webp"
+            alt="Esaul Alfacan">
+        <h1>Esaul Alfacan</h1>
     </header>
+    <nav class="menu">
+        <ul class="menu__lista">
+            <li><a target="_blank" rel="noopener" href="https://api.whatsapp.com/send?phone=7751488345"
+                    aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></li>
+            <li><a target="_blank" rel="noopener" href="https://www.facebook.com/esaul.alfacan" aria-label="Facebook"><i
+                        class="fa-brands fa-facebook"></i></a></li>
+            <li><a target="_blank" rel="noopener"
+                    href="https://www.linkedin.com/in/esaul-alejandro-alfaro-canales-3b4835299/"
+                    aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a target="_blank" rel="noopener" href="https://www.instagram.com/esaul.alfacan/"
+                    aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+    </nav>
 
-    <main class="data">
 
-        <section class="data__miniinfo">
-            <h2>"Aprender es fácil cuando eres curioso y disciplinado"</h2>
-            <p>Soy un ingeniero especializado en nanotecnología, con enfoque en materiales energéticos.</p>
+    <main class="principal">
+        <section class="info__fija">
+            <div id="infoClonada"></div>
+
         </section>
 
-        <section class="data__sections">
-            <div class="item">
-                <button class="accordion">Trabajos</button>
+        <section class="principal__btn">
+            <button class="button2" onclick="mostrarInfo('Trabajos')">Trabajos</button>
+            <div class="info" data-tipo="Trabajos">
+                <div class="info__cerrar" onclick="cerrarInfo(this)">CERRAR</div>
                 <div class="panel">
                     <br>
                     <a download="" class="item__icon" target="_blank" rel="noopener"
@@ -68,67 +59,56 @@
                     <br>
                 </div>
             </div>
-
-            <div class="item">
-                <button class="accordion">Sobre mÍ</button>
-                <div class="panel">
-                    <br>
-                    <p>Soy Esaul Alejandro Alfaro Canales, graduado en Ingeniería en Nanotecnología con especialización
-                        en materiales para la energía. Actualmente, me dedico a ofrecer consultorías en materiales y
-                        desarrollo de software, aprovechando mi amplia formación técnica para proporcionar soluciones
-                        innovadoras.</p>
-                    <br>
-                </div>
-            </div>
-
-            <div class="item">
-                <button class="accordion">Consultoría en Materiales Especializados</button>
-                <div class="panel">
-                    <br>
-                    <ol>
-                        <li> Asesoramiento en selección y uso de materiales para proyectos de energía. </li>
-                        <li>Optimización de materiales para mejorar la eficiencia energética.</li>
-                    </ol>
-                    <br>
-                </div>
-            </div>
-
-            <div class="item">
-                <button class="accordion">Consultoría en Desarrollo de Software</button>
-                <div class="panel">
-                    <br>
-                    <ol>
-                        <li> Diseño y desarrollo web a medida. </li>
-                    </ol>
-                    <br>
-                </div>
-            </div>
-
-            <div class="item">
-                <button class="accordion">Investigación y Desarrollo</button>
-                <div class="panel">
-                    <br>
-                    <ol>
-                        <li>Colaboración en proyectos de investigación y desarrollo en nanotecnología y energía. </li>
-                        <li>Desarrollo de nuevos materiales o técnicas innovadoras.</li>
-                    </ol>
-                    <br>
-                </div>
-            </div>
-
-            <div class="item">
-                <button class="accordion">Contacto</button>
-                <div class="panel">
-                    <br>
-                    <a class="item__icon" target="_blank" rel="noopener"
-                        href="https://api.whatsapp.com/send?phone=7751488345" aria-label="WhatsApp"><i
-                            class="fa-brands fa-whatsapp"></i></a>
-                    <br>
-                </div>
-            </div>
-
-
         </section>
+
+        <section class="principal__btn">
+            <button class="button2" onclick="mostrarInfo('Sobre mí')">Sobre mí</button>
+            <div class="info" data-tipo="Sobre mí">
+                <div class="info__cerrar" onclick="cerrarInfo(this)">CERRAR</div>
+
+                <p>Soy Esaul Alejandro Alfaro Canales, graduado en Ingeniería en Nanotecnología con especialización
+                    en materiales para la energía. Actualmente, me dedico a ofrecer consultorías en materiales y
+                    desarrollo de software, aprovechando mi amplia formación técnica para proporcionar soluciones
+                    innovadoras.</p>
+            </div>
+        </section>
+
+        <section class="principal__btn">
+            <button class="button2" onclick="mostrarInfo('Consultorias')">Consultorias</button>
+            <div class="info" data-tipo="Consultorias">
+                <div class="info__cerrar" onclick="cerrarInfo(this)">CERRAR</div>
+                <ol>
+                    <li> Asesoramiento en selección y uso de materiales para proyectos de energía. </li>
+                    <li>Optimización de materiales para mejorar la eficiencia energética.</li>
+                    <li> Diseño y desarrollo web a medida. </li>
+
+                </ol>
+            </div>
+        </section>
+
+        <section class="principal__btn">
+            <button class="button2" onclick="mostrarInfo('Investigación')">Investigación</button>
+            <div class="info" data-tipo="Investigación">
+                <div class="info__cerrar" onclick="cerrarInfo(this)">CERRAR</div>
+
+                <ol>
+                    <li>Colaboración en proyectos de investigación y desarrollo en nanotecnología y energía. </li>
+                    <li>Desarrollo de nuevos materiales o técnicas innovadoras.</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="principal__btn">
+            <button class="button2" onclick="mostrarInfo('Contacto')">Contacto</button>
+            <div class="info" data-tipo="Contacto">
+                <div class="info__cerrar" onclick="cerrarInfo(this)">CERRAR</div>
+
+                <a class="item__icon" target="_blank" rel="noopener"
+                    href="https://api.whatsapp.com/send?phone=7751488345" aria-label="WhatsApp"><i
+                        class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </section>
+
     </main>
 
     <footer class="presentacionFooter">
@@ -141,8 +121,9 @@
 
     <!--ETIQUETAS SCRIPT-->
     <script src="https://kit.fontawesome.com/347a447390.js" crossorigin="anonymous"></script>
-    <script src="/proyecto-tarjetaDigital/TARJETAS/DEMO/contenido/js/acordion.js"></script>
-
+    <script src="/proyecto-tarjetaDigital/TARJETAS/DEMO2/contenido/js/info-fija.js"></script>
+    <script src="/proyecto-tarjetaDigital/TARJETAS/DEMO2/contenido/js/cerrar-info-fija.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </body>
 
 
